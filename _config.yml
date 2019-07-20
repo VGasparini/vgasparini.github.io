@@ -1,1 +1,58 @@
-theme: jekyll-theme-tactile
+title: VGasparini Personal Page
+author: Vinicius Gasparini
+email: contact@vgasparini.dev
+description: > # this means to ignore newlines until "show_exerpts:"
+  Vinicius Gasparini's personal techpage. Hospeding little projects and cool stufs
+permalink: ':title/'
+baseurl: '' # the subpath of your site, e.g. /blog
+show_excerpts: true # set to true to show excerpts on the homepage
+
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+sass:
+    load_paths:
+      - _sass
+      - node_modules
+exclude: []
+    
+plainwhite:
+  name: Vinicius Gasparini
+  tagline: Developer. Designer.
+  date_format: "%-d %b %Y"
+  sitemap: true # set to true to generate sitemap.xml content
+
+  # generate social links in footer
+  social_links:
+    twitter: vgasparini
+    github:  vgasparini
+    linkedin: in/gasparinivicius
+    facebook: gasparini.vinicius
+    youtube_channel: UCs-pnykP0weqh8ey6Tp0mwA
+    youtube_channel_name: BRUTE udesc
+    telegram: viniciuszeiko
+    # instagram: jekyll
+    # dribbble: jekyll
+    # flickr:   jekyll
+    # pinterest: jekyll
+    # youtube: jekyll
+    # googleplus: +jekyll
+    # microdotblog: jekyll
+
+    # Mastodon instances
+    # mastodon:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+#header_pages:
+# - about.md
+
+# Build settings
+theme: plainwhite
+
+plugins:
+  - jekyll-seo-tag
+#  - jekyll-feed
