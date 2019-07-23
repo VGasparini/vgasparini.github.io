@@ -1,4 +1,4 @@
-title: VGasparini Personal Page
+title: VGasparini | Personal Page
 author: Vinicius Gasparini
 email: contact@vgasparini.dev
 description: > # this means to ignore newlines until "show_exerpts:"
@@ -17,7 +17,7 @@ exclude: []
     
 plainwhite:
   name: Vinicius Gasparini
-  tagline: Developer. Designer.
+  tagline: developer. designer. poet.
   date_format: "%-d %b %Y"
   sitemap: true # set to true to generate sitemap.xml content
 
@@ -30,20 +30,6 @@ plainwhite:
     youtube_channel: UCs-pnykP0weqh8ey6Tp0mwA
     youtube_channel_name: BRUTE udesc
     telegram: viniciuszeiko
-    # instagram: jekyll
-    # dribbble: jekyll
-    # flickr:   jekyll
-    # pinterest: jekyll
-    # youtube: jekyll
-    # googleplus: +jekyll
-    # microdotblog: jekyll
-
-    # Mastodon instances
-    # mastodon:
-    # - username: jekyll
-    #   instance: example.com
-    # - username: jekyll2
-    #   instance: example.com
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up

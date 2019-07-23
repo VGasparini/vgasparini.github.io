@@ -1,48 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	{%- include head.html -%}
-</head>
+<html lang="pt-br">
+{% include head.html %}
 <body>
-	<main class="container">
-		<section class="about">
-			<img src="{{ "/assets/portfolio.png" | relative_url }}" alt="{{ site.plainwhite.name }}">
-			<h2>{{ site.plainwhite.name }}</h2>
-			<p class="tagline">{{ site.plainwhite.tagline }}</p>
-			<ul class="social">
-				<a href="https://github.com/{{ site.plainwhite.social_links.github }}"><li><i class="icon-github-squared"></i></li></a>
-				<a href="https://www.linkedin.com/{{ site.plainwhite.social_links.linkedin }}"><li><i class="icon-linkedin-squared"></i></li></a>
-				<a href="https://facebook.com/{{ site.plainwhite.social_links.facebook }}"><li><i class="icon-facebook-squared"></i></li></a>
-				<a href="https://twitter.com/{{ site.plainwhite.social_links.twitter }}"><li><i class="icon-twitter-squared"></i></li></a>
-				<a href="https://youtube.com/channel/{{ site.plainwhite.social_links.youtube }}"><li><i class="icon-youtube-play"></i></li></a>
-				<a href="https://t.me/{{ site.plainwhite.social_links.telegram }}"><li><i class="icon-telegram"></i></li></a>
-			</ul>
-			<div class="dropdown">
-				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-						Resume
-				</button>
-				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-					<a class="dropdown-item" href="/docs/resume-ptbr.pdf">Português</a>
-					<a class="dropdown-item" href="/docs/resume-en.pdf">English</a>
-				</div>
-			</div>
-			<p>&copy; 2019</p>
-		</section>
-		<section class="content">
-			{{ content }}
-		</section>
+	
+	<main role="main">
+		{% include sidebar.html %}
+		<div class="content">
+			{{content}}
+		</div>
 	</main>
-	{%- if site.plainwhite.analytics_id -%}
-	<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.plainwhite.analytics_id }}"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-		gtag('config', '{{ site.plainwhite.analytics_id }}');
-	</script>
-	{%- endif -%}
-	<script src="{{"/node_modules/jquery/dist/jquery.min.js" | prepend: site.baseurl}}"></script>
-	<script src="{{"/node_modules/popper.js/dist/umd/popper.min.js" | prepend: site.baseurl}}"></script>
-	<script src="{{"/node_modules/bootstrap/dist/js/bootstrap.min.js" | prepend: site.baseurl}}"></script>
+	{%- include scripts.html -%}
 </body>
 </html>
