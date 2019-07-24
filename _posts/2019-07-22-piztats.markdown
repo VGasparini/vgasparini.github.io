@@ -1,8 +1,0 @@
----
-layout: app
-title:  "Piztats"
-date:   2019-07-22 16:00:00
-description: Comparador de pizzas.
-categories: project
----
-TODO
