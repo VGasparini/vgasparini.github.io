@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Contact Us - Maratona de Programação UDESC</title>
+    <title>Configurações - BOCA</title>
     <link rel="icon" type="image/png" sizes="512x512" href="assets/img/favicon.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
@@ -31,13 +31,18 @@
                     <li class="nav-item" role="presentation"><a class="nav-link" href="clarification.html">CLARIFICAÇÃO</a></li>
                     <li class="nav-item" role="presentation"></li>
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">OPÇÕES</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="settings.html">Configurações</a><a class="dropdown-item bg-danger" role="presentation" href="login.html">Sair</a></div>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="settings.html">Configurações</a><a class="dropdown-item" role="presentation" href="login.html">Sair</a></div>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <main class="page contact-us-page" style="padding-top: 45px;">
+        <div class="bg-primary d-xl-flex justify-content-xl-center align-items-xl-center">
+            <h4 class="text-center text-white" style="margin-top: 8px;"><em>Blind</em> - 9 minutos restantes&nbsp;</h4><i class="fas fa-info-circle" data-toggle="tooltip" data-bs-tooltip="" data-placement="right"
+                style="font-size: 12px;color: #eaeaea;"
+                title="Uma prova oficial possui duração de 300 minutos. A partir do minuto 250 o placar é congelado, somente o próprio time sabe o veredito. Este periodo é chamado de blind. Por fim, ao minuto 280 inicia-se o blind. Durante o blind nem mesmo o time sabe a resposta da sua submissão."></i>
+        </div>
         <section class="clean-block clean-form dark">
             <div class="container">
                 <div class="block-heading">
@@ -49,16 +54,19 @@
                     <div class="form-group"><label>Login</label><input class="form-control" type="text" placeholder="udesc03" readonly=""></div>
                     <div class="form-group"><label>Senha atual</label><input class="form-control" type="password"></div>
                     <div class="form-group"><label>Nova senha</label><input class="form-control" type="password"></div>
-                    <div class="form-group"><button class="btn btn-success btn-block" type="submit">Salvar</button></div>
+                    <div class="form-group"><button class="btn btn-success btn-block" id="salvar_button" type="submit">Salvar</button></div>
                 </form>
             </div>
         </section>
     </main>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
     <script src="assets/js/smoothproducts.min.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script>$("#salvar_button").on("click", function () { alert("Alteração realizada com sucesso!") })</script>
 </body>
+
 
 </html>
