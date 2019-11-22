@@ -38,7 +38,7 @@
     </nav>
     <main class="page landing-page" style="padding-top: 45px;">
         <div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center align-items-center justify-content-sm-center align-items-sm-center justify-content-md-center align-items-md-center justify-content-lg-center align-items-lg-center justify-content-xl-center align-items-xl-center">
-            <h4 class="text-center text-muted" style="margin-top: 8px;">265 minutos restantes&nbsp;</h4><i class="fas fa-info-circle" data-toggle="tooltip" data-bs-tooltip="" data-placement="right" style="font-size: 12px;color: #1485ee;" title="Uma prova oficial possui duração de 300 minutos. A partir do minuto 250 o placar é congelado, somente o próprio time sabe o veredito. Este periodo é chamado de blind. Por fim, ao minuto 280 inicia-se o blind. Durante o blind nem mesmo o time sabe a resposta da sua submissão."></i></div>
+            <h4 class="text-center text-muted" style="margin-top: 8px;">265 minutos restantes&nbsp;</h4><i class="fas fa-info-circle" data-toggle="tooltip" data-bs-tooltip="" data-placement="right" style="font-size: 12px;color: #1485ee;" title="Uma prova oficial possui duração de 300 minutos. A partir do minuto 250 o placar é congelado, somente o próprio time sabe o veredito. Este periodo é chamado de freeze. Por fim, ao minuto 280 inicia-se o blind. Durante o blind nem mesmo o time sabe a resposta da sua submissão."></i></div>
         <section
             class="clean-hero" style="background-color: #ffffff;color: rgba(255,255,255,0);font-size: 12px;padding-right: 20px;margin-top: 20px;padding-left: 20px;margin-bottom: 20px;">
             <div class="bg-white shadow flex-column flex-grow-1 flex-fill mb-auto" style="margin-right: 20px;margin-left: 20px;padding-top: 0px;margin-top: 20px;">
@@ -87,14 +87,21 @@
                             </table>
                         </div>
                         <div class="card">
-                            <div class="card-body d-flex flex-column align-items-center mx-auto justify-content-lg-end"><textarea placeholder="Digite aqui sua pergunta..." name="Mensagem" wrap="soft" style="width: 450px;margin-bottom: 20px;"></textarea>
-                                <div class="d-lg-flex justify-content-lg-center">
-                                    <p class="text-right text-dark" style="margin-top: 9px;margin-right: 9px;font-size: 16px;"><strong>Problema</strong></p>
-                                    <div class="dropdown" style="margin: 0px;"><button class="btn btn-secondary dropdown-toggle text-center" data-toggle="dropdown" aria-expanded="false" type="button" style="width: 205px;">Selecionar problema&nbsp;</button>
-                                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">Geral</a><a class="dropdown-item" role="presentation" href="#">A</a><a class="dropdown-item" role="presentation" href="#">B</a><a class="dropdown-item" role="presentation"
-                                                href="#">C</a><a class="dropdown-item" role="presentation" href="#">D</a><a class="dropdown-item" role="presentation" href="#">E</a><a class="dropdown-item" role="presentation" href="#">F</a><a class="dropdown-item"
-                                                role="presentation" href="#">H</a><a class="dropdown-item" role="presentation" href="#">I</a></div>
-                                    </div>
+                            <div class="card-body d-flex flex-column align-items-center mx-auto justify-content">
+                                <p class="text-dark" style="margin-top: 9px;margin-right: 9px;font-size: 16px;">Pergunta</p>
+                                <textarea placeholder="Digite aqui sua pergunta..." name="Mensagem" wrap="soft" style="width: 450px;margin-bottom: 20px;"></textarea>
+                                <p class="text-dark" style="margin-top: 9px;margin-right: 9px;font-size: 16px;">Problema</p>
+                                <div class="form-group">
+                                    <select class="custom-select" required style="width: 270px">
+                                        <option >Selecione o problema</option>
+                                        <option value="A">A</option>
+                                        <option value="B">B</option>
+                                        <option value="C">C</option>
+                                        <option value="D">D</option>
+                                        <option value="E">E</option>
+                                        <option value="F">F</option>
+                                        <option value="G">G</option>
+                                    </select>
                                 </div>
                                 <div class="d-lg-flex justify-content-lg-center" style="margin-left: -14px;">
                                     <p class="text-right text-dark" style="margin-top: 9px;margin-right: 9px;font-size: 16px;margin-left: 30px;">Ao clicar em enviar, você está assumindo responsabilidade pelo conteúdo da mensagem.<br></p>
@@ -142,7 +149,7 @@
                             </table>
                         </div>
                         <div class="card">
-                            <div class="card-body d-flex flex-column align-items-center mx-auto justify-content-lg-end"><textarea placeholder="Digite aqui sua pergunta..." name="Mensagem" wrap="soft" style="width: 450px;margin-bottom: 20px;"></textarea>
+                            <div class="card-body d-flex flex-column align-items-center mx-auto justify-content"><textarea placeholder="Digite aqui sua pergunta..." name="Mensagem" wrap="soft" style="width: 450px;margin-bottom: 20px;"></textarea>
                                 <div class="d-lg-flex justify-content-lg-center"></div>
                                 <div class="d-lg-flex justify-content-lg-center" style="margin-left: -14px;">
                                     <p class="text-right text-dark" style="margin-top: 9px;margin-right: 9px;font-size: 16px;margin-left: 30px;">Ao clicar em enviar, você está assumindo responsabilidade pelo conteúdo da mensagem.<br></p>
