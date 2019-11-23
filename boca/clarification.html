@@ -30,7 +30,11 @@
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="clarification.html">CLARIFICAÇÃO</a></li>
                     <li class="nav-item" role="presentation"></li>
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">OPÇÕES</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="settings.html">Configurações</a><a class="dropdown-item" role="presentation" href="login.html">Sair</a></div>
+                        <div class="dropdown-menu" role="menu">
+                            <a class="dropdown-item" role="presentation" href="settings.html">Configurações</a>
+                            <a class="dropdown-item" role="presentation" href="help.pdf">Ajuda</a>
+                            <a class="dropdown-item" role="presentation" href="login.html">Sair</a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -106,8 +110,13 @@
                                 <div class="d-lg-flex justify-content-lg-center" style="margin-left: -14px;">
                                     <p class="text-right text-dark" style="margin-top: 9px;margin-right: 9px;font-size: 16px;margin-left: 30px;">Ao clicar em enviar, você está assumindo responsabilidade pelo conteúdo da mensagem.<br></p>
                                 </div>
-                                <div class="d-lg-flex justify-content-lg-center" style="margin: -1px;margin-top: -24px;"><button class="btn btn-success btn-block" type="button" style="width: 130px;margin-top: 25px;margin-right: 5px;">Enviar</button><button class="btn btn-danger btn-block" type="button" style="margin-top: 25px;width: 130px;margin-left: 6px;">Limpar</button></div>
-                            </div><small class="form-text text-center text-muted">As clarificações podem ser utilizadas para tirar eventuais dúvidas referente a competição vigente.<br>Estas dúvidas serão publicadas nesta página e são acessíveis a todos os participantes.</small></div>
+                                <div class="d-lg-flex justify-content-lg-center" style="margin: -1px;margin-top: -24px;">
+                                    <button class="btn btn-success btn-block" id="enviar_0_button" type="button" style="width: 130px;margin-top: 25px;margin-right: 5px;">Enviar</button>
+                                    <button class="btn btn-danger btn-block" type="button" style="margin-top: 25px;width: 130px;margin-left: 6px;">Limpar</button>
+                                </div>
+                            </div>
+                            <small class="form-text text-center text-muted">As clarificações podem ser utilizadas para tirar eventuais dúvidas referente a competição vigente.<br>Estas dúvidas serão publicadas nesta página e são acessíveis a todos os participantes.</small>
+                        </div>
                     </div>
                     <div class="tab-pane" role="tabpanel" id="tab-2">
                         <div class="table-responsive table-borderless text-center">
@@ -154,8 +163,10 @@
                                 <div class="d-lg-flex justify-content-lg-center" style="margin-left: -14px;">
                                     <p class="text-right text-dark" style="margin-top: 9px;margin-right: 9px;font-size: 16px;margin-left: 30px;">Ao clicar em enviar, você está assumindo responsabilidade pelo conteúdo da mensagem.<br></p>
                                 </div>
-                                <div class="d-lg-flex justify-content-lg-center" style="margin: -1px;margin-top: -24px;"><button class="btn btn-success btn-block" type="button" style="width: 130px;margin-top: 25px;margin-right: 5px;">Enviar</button><button class="btn btn-danger btn-block" type="button" style="margin-top: 25px;width: 130px;margin-left: 6px;">Limpar</button></div>
-                            </div><small class="form-text text-left text-muted">As clarificações podem ser utilizadas para tirar eventuais dúvidas referente a competição vigente.<br>Estas dúvidas serão publicadas nesta página e são acessíveis a todos os participantes.</small></div>
+                                <div class="d-lg-flex justify-content-lg-center" style="margin: -1px;margin-top: -24px;">
+                                    <button class="btn btn-success btn-block" id="enviar_1_button" type="button" style="width: 130px;margin-top: 25px;margin-right: 5px;">Enviar</button>
+                                    <button class="btn btn-danger btn-block" type="button" style="margin-top: 25px;width: 130px;margin-left: 6px;">Limpar</button></div>
+                            </div><small class="form-text text-center text-muted">As clarificações podem ser utilizadas para tirar eventuais dúvidas referente a competição vigente.<br>Estas dúvidas serão publicadas nesta página e são acessíveis a todos os participantes.</small></div>
                     </div>
                 </div>
             </div>
@@ -167,6 +178,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
     <script src="assets/js/smoothproducts.min.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script>$("#enviar_0_button").on("click", function () { alert("Pergunta enviada!") })</script>
+    <script>$("#enviar_1_button").on("click", function () { alert("Pergunta enviada!") })</script>
 </body>
 
 </html>

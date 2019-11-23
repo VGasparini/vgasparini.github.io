@@ -30,7 +30,11 @@
                     <li class="nav-item" role="presentation"><a class="nav-link" href="clarification.html">CLARIFICAÇÃO</a></li>
                     <li class="nav-item" role="presentation"></li>
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">OPÇÕES</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="settings.html">Configurações</a><a class="dropdown-item" role="presentation" href="login.html">Sair</a></div>
+                        <div class="dropdown-menu" role="menu">
+                            <a class="dropdown-item" role="presentation" href="settings.html">Configurações</a>
+                            <a class="dropdown-item" role="presentation" href="help.pdf">Ajuda</a>
+                            <a class="dropdown-item" role="presentation" href="login.html">Sair</a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -45,6 +49,7 @@
                 <ul class="nav nav-tabs">
                     <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-1">Realizadas</a></li>
                     <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-2">Submeter</a></li>
+                    <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-3">Backup</a></li>
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane" role="tabpanel" id="tab-1">
@@ -115,13 +120,11 @@
                                     </tr>
                                 </tbody>
                             </table>
-                        </div><small class="form-text text-center text-muted">As submissões são corrigidas automáticamente pelo <em>boca-autojudge.</em><br>Qualquer saída que não identica ao esperado será considerada errada.<br>O tempo limite de cada questão está descrita no caderno de prova.</small></div>
-                    <div
-                        class="tab-pane active" role="tabpanel" id="tab-2">
+                        </div><small class="form-text text-center text-muted">As submissões são corrigidas automáticamente pelo <em>boca-autojudge.</em><br>Qualquer saída que não identica ao esperado será considerada errada.<br>O tempo limite de cada questão está descrita no caderno de prova.</small>
+                    </div>
+                    
+                    <div class="tab-pane active" role="tabpanel" id="tab-2">
                         <div class="card">
-                            <div class="card-header">
-                                <h5 class="mb-0">Heading</h5>
-                            </div>
                             <div class="card-body d-flex flex-column align-items-center mx-auto justify-content-lg-end">
                                 <p class="text-right text-dark" style="margin-top: 9px;font-size: 16px;">Problema</p>
                                 <div class="d-lg-flex justify-content-lg-center">
@@ -159,14 +162,64 @@
                                 </div>
                                 <p class="text-right text-dark" style="margin-top: 18px;font-size: 16px;">Ao clicar em enviar, você está assumindo autoria do código enviado.</p>
                                 <div class="d-lg-flex justify-content-lg-center" style="margin: -1px;margin-top: -24px;">
-                                    <button class="btn btn-success btn-block" type="submit" style="width: 130px;margin-top: 25px;margin-right: 5px;">Enviar</button>
-                                    <button class="btn btn-danger btn-block" type="submit" style="margin-top: 25px;width: 130px;margin-left: 5px;">Limpar</button>
+                                <button id="enviar_button"class="btn btn-success btn-block" type="submit" style="width: 130px;margin-top: 25px;margin-right: 5px;">Enviar</button>
+                                <button class="btn btn-danger btn-block" type="submit" style="margin-top: 25px;width: 130px;margin-left: 5px;">Limpar</button>
                                 </div>
                                 <small
                                     class="form-text text-center text-muted">As submissões deverão sempre ter como objetivo a resolução do problema mencionado.<br>Caso seja detectado tentativa de <em>flood </em>ou outro tipo de prática não condizente com o espirito da competição, a equipe poderá
                                     ser banida.</small>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="tab-pane" role="tabpanel" id="tab-3">
+                        <div class="card">
+                            <div class="card-body d-flex flex-column align-items-center mx-auto justify-content-lg-end">
+                                <p class="text-right text-dark" style="margin-top: 9px;font-size: 16px;">Arquivo</p>
+                                <div class="custom-file" style="width: 270px;font-size: 16px;">
+                                    <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                                    <label class="custom-file-label" for="validatedCustomFile">Selecione o arquivo...</label>
+                                </div>
+                                <div class="form-check" >
+                                    <input class="form-check-input" type="checkbox" style="margin-top: 14px;" value="" id="defaultCheck1">
+                                    <label class="form-check-label text-dark" style="margin-top: 9px; font-size: 16px;" for="defaultCheck1">Imprimir arquivo</label>
+                                </div>
+                                <p class="text-right text-dark" style="margin-top: 18px;font-size: 16px;">Utilize o recurso de impressão com consciência.</p>
+                                <div class="d-lg-flex justify-content-lg-center" style="margin: -1px;margin-top: -24px;">
+                                <button id="salvar_button"class="btn btn-success btn-block" type="submit" style="width: 130px;margin-top: 25px;margin-right: 5px;">Enviar</button>
+                                <button class="btn btn-danger btn-block" type="submit" style="margin-top: 25px;width: 130px;margin-left: 5px;">Limpar</button>
+                                </div>
+
+                                <div class="table-responsive table-borderless" style="margin-top: 18px; margin-bottom: 9px;">
+                                    <table class="table table-striped table-bordered table-hover">
+                                        <thead>
+                                            <tr class="text-center">
+                                                <th><strong>ID</strong></th>
+                                                <th>Arquivo</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="text-center">
+                                                <td><strong>1</strong></td>
+                                                <td class="text-monospace text-info">a.py</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td><strong>2</strong></td>
+                                                <td class="text-monospace text-info">b.cpp</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td><strong>3</strong></td>
+                                                <td class="text-monospace text-info">b_1.py</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <small
+                                    class="form-text text-center text-muted">Os arquivos aqui enviados ficarão armazenados em nosso servidor, podendo ser recuperado a qualquer momento após a competição.</small>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             </div>
@@ -178,7 +231,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
     <script src="assets/js/smoothproducts.min.js"></script>
     <script src="assets/js/theme.js"></script>
-    <script>$("#registrar_button").on("click", function () { alert("Usuário criado! Favor entrar em contato com a organização para liberar acesso.") })</script>
+    <script>$("#enviar_button").on("click", function () { alert("Submissão enviada!") })</script>
 </body>
 
 </html>
